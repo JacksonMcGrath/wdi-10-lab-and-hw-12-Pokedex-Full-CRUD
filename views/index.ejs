@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemon Homepage</title>
+</head>
+<body>
+	<h1>Welcome to the Pokedex Homepage</h1>
+
+	<div class="fruits">
+		<% for(let i = 0; i < data.length; i++) { %> 
+			<a href="/pokemon/<%= i %>"><%=data[i].name%></a>
+				
+			<img src="<%=data[i].img%>">
+		<% } %>
+	</div>
+
+</body>
+</html>
